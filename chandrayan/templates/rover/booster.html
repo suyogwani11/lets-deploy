@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block body_block %}
+<form method="post">
+  <h1>This is booster page.</h1>
+  {{ inject.as_p }}
+  {% csrf_token %}
+  <input type="submit" class="btn btn-primary" value="great">
+</form>
+{% endblock %}
+
+
+
+<!-- <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+        <form method="post">
+          <h1>This is booster page.</h1>
+          {{ inject.as_p }}
+          {% csrf_token %}
+          <input type="submit" class="btn btn-primary" value="great">
+        </form>
+    </div>
+      </body>
+</html> -->

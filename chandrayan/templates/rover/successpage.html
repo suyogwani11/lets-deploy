@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block body_block %}
+<div class="jumbotron">
+  <h1>Success!</h1>
+  <h2>Visit  <a href="{% url 'admin:index' %}">admin</a> </h2>
+</div>
+{% endblock %}
+
+
+<!--
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Success!</h1>
+        <h2>Visit  <a href="{% url 'admin:index' %}">admin</a> </h2>
+      </div>
+    </div>
+      </body>
+</html> -->

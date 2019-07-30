@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load my_temps %}
+{% block body_block %}
+<h1>Welcome to Project Chandrayan.</h1>
+<p>context example limitation: {{pie}} plus {{ten}} is {{ pie|add:'10'|floatformat:2}}</p>
+<p>another context example: "{{sentence|upper}}" - {{letter|upper}} = "{{sentence|kut:letter|upper}}"</p>
+<img src="{% static "images/moonyan.jpg"%}" alt="no cover">
+{% endblock %}
+
+
+
+<!-- {% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="icon" href="static/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <h1>Project Chandrayan.</h1>
+    <p>Go to <a href="{% url 'suyog:rovn' %}">roverlink</a>/</p>
+    <p>Go to <a href="{% url 'admin:index' %}">admin</a>/</p>
+  </body>
+</html> -->

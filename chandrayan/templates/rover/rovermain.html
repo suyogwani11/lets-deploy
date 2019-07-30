@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block body_block %}
+<h1>Booster image</h1>
+<img src="{% static "images/boost.jpeg"%}" alt="no boost">
+{% endblock %}
+
+
+<!-- <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>boostup</title>
+    <link rel="stylesheet" href="{% static "css/master.css" %}">
+  </head>
+    <body>
+      <p>Go to <a href="{% url 'suyog:boostn' %}">boostlink</a>/</p>
+      <p>Go to <a href="{% url 'suyog:flapn' %}">flaplink</a>/</p>
+      <p>Go to <a href="{% url 'admin:index' %}">admin</a>/</p>
+      <p>Go to <a href="{% url 'home' %}">home</a>/</p>
+      <p>Go to <a href="{% url 'harry' %}">end of the links tree</a>/</p>
+      <h1>Booster image</h1>
+      <img src="{% static "images/boost.jpeg"%}" alt="no boost">
+  </body>
+</html> -->
